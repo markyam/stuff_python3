@@ -15,7 +15,7 @@ def progress(blk_reads, blk_size, total_size):
     return None
 
 if __name__ == '__main__':
-    url = 'http://storage.sbg1.cloud.ovh.net/v1/AUTH_f3d9da6ae8ad466f99fe51489414ceeb/bb5-images/'
-    filename, headers = urlretrieve(url + '077/312570c48b4d9636ee63015ae64f8.jpg', reporthook=progress)
+    url = 'http://my_url'
+    filename, headers = urlretrieve(url, reporthook=progress)
     print('Download finished')
     print('File in :', filename)
